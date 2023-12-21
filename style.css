@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'YClover-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'seolleimcool-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+/* 헤더 공간 */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #951114;
+    /* 색상 투명도를 주면 스크롤할 때 섹션1이 헤드에 비치게 된다 */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+/* z축(깊이)를 기준으로 화면 앞으로 나오게하거나 뒤로 가게한다 */
+    z-index: 100;
+
+}    
+header h1 {
+    font-family: 'YClover-Bold';
+    font-size: 2.7em;
+    color: white;
+}
+/* 윈도우모양 + . = 이모지, 특수문자 입력가능😊❤🌷(●'◡'●)«» */
+
+/* 전체 섹션에 대한 디자인 */
+section {
+    height: 100vh;
+ /* border를 이용해서 가이드(빨간외곽선) 작성- 디자인후 지웠음 */
+   
+}
+/* 섹션1-배경사진과 글자 위치 */
+/* 아래 .은(.s1) 클래스 내용임을 말해주는 것임 */
+.s1 {
+    background-image: url(ocean-1867285_1280.jpg);
+    background-size: cover;
+    /* cover : 전체화면에 맞춰서 이미지 들어가게 해줌 */
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+   }
+.s2 {
+    background-color: rgba(66, 137, 66, 0.839);
+    
+}
+
+/* 글자를 조금 띄우고, 글자 색상 변경 */
+
+.word {
+    font-size: 1.3em;
+    color:#130F0D;
+    font-family: 'seolleimcool-SemiBold';
+ 
+}
+
+/* 섹션2에서 그림 추가 */
+.gallery {
+    display: flex;
+    margin-top: 0px;
+    /* margin-top : 20px 을 0px로 수정하여 섹션2의 윗부분 배경이
+    흰색으로 남아있는 것을 초록색 백그라운드색상으로 채웠음 */
+    justify-content: space-around;
+    /* 섹션2의 박스(사진)의 간격을 균형있게 벌임  */
+}
+.box {
+    width: 469px;
+    height: 99vh;  /*비율에 따라서 달라지는 값 */
+    background-color: grey;
+    margin: 3px;
+    border-radius: 25px;
+    
+}
+.pic1 {
+    background-image: url(advent-1883840_640.jpg);
+    /* 이미지의 크기를 맞춘다 */
+    background-size: cover;
+    /* 이미지의 위치를 이동한다 */
+    /* 이미지의 위치는 사진에 따라
+    left,center,right,top,bottom으로 이동가능 */
+    background-position: center;
+}
+.pic2 {
+    background-image: url(merry-christmas-2984138_640.jpg);
+    /* 이미지의 크기를 맞춘다 */
+    background-size: cover;
+    /* 이미지의 위치를 이동한다 */
+    background-position: center;
+    width: 990px;
+
+
+}
+.pic3 {
+    background-image: url(cookies-20725_640.jpg);
+    /* 이미지의 크기를 맞춘다 */
+    background-size: cover;
+    /* 이미지의 위치를 이동한다 */
+    background-position: center;
+}
+ 
+/* 푸터에 대한 디자인 */
+footer {
+    height: 80px;
+    background-color: lightgrey;
+    padding: 5px;
+    text-align: center;
+}
